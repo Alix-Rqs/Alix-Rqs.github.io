@@ -1,0 +1,49 @@
+{
+    "nav":{"home":"Accueil",
+    "about":"À propos",
+    "projects":"Projets",
+    "skills":"Compétences",
+    "contact":"Contact"},
+    "welcome":"Bienvenue sur mon portfolio!",
+    "home-btn1":"Voir mes projets",
+    "home-btn2":"Me contacter",
+
+    "ab1":{"title":"Baccalauréat", "loc":"Lycée Pasteur, Hénin-Beaumont","more":"Spécialités Maths & SVT"},
+    "ab2":{"title":"Licence LLCER Japonais", "loc":"Université de Lille", "more":"JLPT N1 (C1)"},
+    "ab3":{"title":"Echange Universitaire (Japon)", "loc":"Nagoya University of Foreign Studies"},
+    "ab4":{"title":"BUT Réseaux & Télécom", "loc":"IUT de Béthune"},
+
+    "pro_intro":"Voici quelques projets réalisés durant mon temps libre. N'hésitez pas à me contacter pour en savoir plus",
+    "web":"Développement Web",
+    "web_intro":"Ces applications et sites web sont hébergés localement",
+    "sys":"Systèmes et Réseaux",
+    "sys_intro":"Toutes ces configurations et installations ont été faites sur un Raspberry pi",
+    "view_pro":"Voir les projets",
+    
+    "web_pro1":{"title":"UPH", "content":["Site statique d'un parti politique imaginaire dans l'univers cyberpunk. ","Première expérience avec MySQL via phpMyAdmin"]},
+    "web_pro2":{"title":"Réseau Social","content":["Backend entièrement en PHP","Gestion des utilisateurs, des permissions et des publications"
+    ,"Modification du profil, ajout de publications, commentaires et réactions."]},
+    "web_pro3":{"title":"Spotify API","content":["Intégration de l'API de Spotify pour récupérer les données des artistes","Recherche d'un.e artiste et affichage des données reçues via l'API"]},
+    "web_pro4":{"title":"Outil d'admin jeu de rôle", "content":["Utilisation de localStorage pour conserver les données de session","Enregistrement et lecture des données en format JSON"]},
+    "web_pro5":{"title":"Logs Dashboard","content":["Premier projet Flask","Agrégation et formatage de logs Nginx, SSH et des connexions WireGuard au format JSON","Lecture et visualisation des logs","Graphiques avec matplotlib","Blocage de certaines addresse IP au niveau du serveur web","Système d'authentification avec Flask"]},
+    "web_pro6":{"title":"RADIUS GUI","content":["Interface Web développée avec Flask et reliée à une base de données FreeRADIUS","Permet la création, modification de durée de validité, et suppression des clients","Affiche les logs des dernières connexions"]},
+
+    "sysnet_pro1":{"title":"Hébergement Web Local","content":["Hébergement des différents sites web avec Nginx","Sécurisation du trafic avec OpenSSL","DNS local avec dnsmasq","Proxy Nginx et mise en place de Gunicorn pour Flask"], "cover":"Hébergement Local"},
+    "sysnet_pro2":{"title":"VPN WireGuard","content":["Mise en place d'un serveur VPN WireGuard sur Raspberry Pi avec PiVPN"]},
+    "sysnet_pro3":{"title":"PXE Boot","content":["Déploiement de Netbootxyz avec docker","Première utilisation de docker"], "cover":"Boot à partir du réseau"},
+    "sysnet_pro4":{"title":"Point d'accès Wi-fi","content":["Configuration d'un point d'accès Wi-fi avec Hostapd en WPA2-EAP","Mise en place d'un serveur d'authentification Freeradius"]},
+    "sysnet_pro5":{"title":"MITM Proxy","content":["Développement de trois scripts Python avec Scapy pour apprendre à intercepter et manipuler les paquets circulants sur le réseau","Usurpation d'addresse MAC entre une cible et un routeur","Interception, modifications et relais des requêtes réseau."]},
+
+
+    "skills_intro":"Technologies et outils avec lesquels je suis familier",
+    "development":"Développement",
+    "networks":"Réseaux",
+    "cryptography":"Cryptographie",
+    "offensive":"Sécurité Offensive",
+    "monitoring":"SIEM & Monitoring",
+    "splunk":"Splunk - notions",
+    "elastic":"Elastic - notions",
+    "systems":"Systèmes",
+    "certif":"Certifications"
+    
+}

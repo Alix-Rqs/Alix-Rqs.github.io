@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./static/script.js" defer></script>
+
+
+</head>
+<body>
+    <div class="nav">
+        <div class="languages">
+            <img src="./static/images/fr.png" onclick="set_lang('fr')" alt="Français">
+            <img src="./static/images/en.png" onclick="set_lang('en')" alt="English">
+            <img src="./static/images/jp.png" onclick="set_lang('ja')" alt="日本語">
+
+        </div>
+
+        <img src="./static/images/hamburger.png" id="burger" alt="burger">
+
+        <div class="nav_links">
+            <a href="#home" class="selected" data-i18n="nav.home">Home</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#projects" data-i18n="nav.projects">Projects</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+         </div>
+
+
+    </div>
+
+    <div class="main">
+
+        <!-- Home -->
+        <div id="home" class="page">
+            <div class="flex-box">
+                <h1>Alix RUQUOIS</h1>
+                <p data-i18n="welcome">Welcome to my portfolio !</p>
+                <div class="btn-zone">
+                    <a href="#projects" data-i18n="home-btn1">View projects</a>
+                    <a href="#contact" data-i18n="home-btn2">Contact me</a>
+                </div>
+                <div class="medias">
+                    <a href="mailto:alix.dropbox169@passinbox.com"><img src="./static/images/mail.png" alt="email"></a>
+                    <a href="https://www.linkedin.com/in/alix-r-815218433/" target="_blank"><img src="./static/images/linkedin.png" alt="linkedin"></a>
+                    <a href="https://github.com/Alix-Rqs" target="_blank"><img src="./static/images/github.png" alt="github"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separator -->
+         <hr class="hr2">
+
+
+         <!-- About -->
+        <div id="about" class="page">
+            <h2 data-i18n="nav.about">About Me</h2>
+
+            <div class="about_container">
+                <div class="top">
+
+                    <div class="about_block">
+                        <h3 data-i18n="ab3.title">Exchange Year (Japan)</h3>
+                        <span data-i18n="ab3.loc">Nagoya University of Foreign Studies</span>
+                        <date>(2024-2025)</date>
+                    </div>
+
+                      <div class="about_block">
+                        <h3 data-i18n="ab1.title">High School Diploma</h3>
+                        <span data-i18n="ab1.loc">Lycée Pasteur, Hénin-Beaumont</span>
+                        <date>(2021-2023)</date>
+                        <span data-i18n="ab1.more">Specializing in Mathematics and Biology</span>
+                        <span class="certif">Cambridge (C1)</span>
+
+                    </div>
+
+
+
+              
+                </div>
+                   
+                    
+                    <div id="chronology_bar">
+                        <img id="chrono_arrow" src="./static/images/arrow-right.png">
+                    </div>
+
+                    <div class="bottom">
+
+                              <div class="about_block">
+                        <h3 data-i18n="ab4.title">BUT Networking & Telecom</h3>
+                        <span data-i18n="ab4.loc">IUT of Béthune</span>
+                        <date>(2026-)</date>
+                    </div>
+
+
+                   <div class="about_block">
+                        <h3 data-i18n="ab2.title">Major in Japanese language, history and society</h3>
+                        <span data-i18n="ab2.loc">Université de Lille</span>
+                        <date>(2023-2026)</date>
+                        <span data-i18n="ab2.more" class="certif">JLPT N1 (C1)</span>
+                    </div>
+                    
+
+
+                  
+
+                    
+                 </div>
+
+                
+            </div>
+
+        </div>
+
+          <!-- Separator -->
+         <hr class="hr2">
+
+         <!-- Projects -->
+        <div id="projects"  class="page">
+
+
+            <!-- Web Projects-->
+            <div id="web_projects">
+                <h2 id="pro_small" data-i18n="nav.projects">Projects</h2>
+
+            
+
+                <div class="projects_content">
+                    <h2 data-i18n="web">Web Development</h2>
+
+                    <div class="arrows">
+                        <svg onclick="scroll_left('websites_list')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" style="opacity: 1; transform: rotate(0deg);" width="64" height="64" viewBox="5 5 11 14"><path fill="" d="M6.325 12.85q-.225-.15-.337-.375T5.874 12t.113-.475t.337-.375l8.15-5.175q.125-.075.263-.112T15 5.825q.4 0 .7.288t.3.712v10.35q0 .425-.3.713t-.7.287q-.125 0-.262-.038t-.263-.112zM14 15.35v-6.7L8.75 12z"></path></svg>
+                        <svg onclick="scroll_right('websites_list')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" style="opacity: 1; transform: rotate(180deg);" width="64" height="64" viewBox="5 5 11 14"><path fill="" d="M6.325 12.85q-.225-.15-.337-.375T5.874 12t.113-.475t.337-.375l8.15-5.175q.125-.075.263-.112T15 5.825q.4 0 .7.288t.3.712v10.35q0 .425-.3.713t-.7.287q-.125 0-.262-.038t-.263-.112zM14 15.35v-6.7L8.75 12z"></path></svg>
+                    </div>
+                        
+                    <div class="projects_list" id="websites_list">
+
+                     <div class="pro_box">
+                         <div class="cover">
+                            <div class="cover_img">
+                                <img src="./static/images/uph.png" alt="website img">
+                            </div>
+                            <div class="cover_text">
+                                <h3>UPH</h3>
+                                <div class="vignettes">
+                                    <span class="vignette" style="background-color: #09776f;">HTML / CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span_box">
+                                <b data-i18n="web_pro1.title">UPH</b> 
+                                <ul>
+                                    <li data-i18n="web_pro1.content.0">Static website for a fictional political party in the Cyberpunk universe</li>
+                                    <li data-i18n="web_pro1.content.1">First experience with MySQL using phpMyAdmin</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                        
+                        <div class="pro_box">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/blog.png" alt="website img">
+                                </div>
+                                <div class="cover_text">
+                                    <h3  data-i18n="web_pro2.title">Social Network</h3>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color: #62483e;" >PHP / PDO</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span_box">
+                                <b data-i18n="web_pro2.title"> Social Network</b>
+                                <ul>
+                                    <li data-i18n="web_pro2.content.0">Full PHP backend</li>
+                                    <li data-i18n="web_pro2.content.1">User, permission and message management</li>
+                                    <li data-i18n="web_pro2.content.2">Ability to edit profiles, create posts, comment on and like posts</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pro_box">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/spotify.png" alt="website img">
+                                </div>
+                                <div class="cover_text">
+                                    <h3>Spotify API</h3>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color: #2c2c2c;">API / Javascript</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span_box">
+                                <b data-i18n="web_pro3.title">Spotify API</b>
+                                <ul>
+                                    <li data-i18n="web_pro3.content.0">Spotify API's integration to retrieve artists</li>
+                                    <li data-i18n="web_pro3.content.1">Search for artists and display the retrieved data</li>
+                                </ul> 
+                            </div>
+                        </div>
+                        <div class="pro_box">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/jdr2.png" alt="website img">
+                                </div>
+                                <div class="cover_text">
+                                    <h3 data-i18n="web_pro4.title">Roleplay Game Admin Tool</h3>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color: #655239;">Localstorage / JSON</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="span_box">
+                                <b data-i18n="web_pro4.title"> Roleplay Game Admin Tool </b>
+                                <ul>
+                                    <li data-i18n="web_pro4.content.0">Use of localstorage to store session data</li>
+                                    <li data-i18n="web_pro4.content.1">Saving and loading data using JSON files</li>
+                                </ul> 
+                            </div>
+                        </div>
+                        <div class="pro_box">
+                             <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/logs.png" alt="website img">
+                                </div>
+                                <div class="cover_text">
+                                    <h3>Logs Dashboard</h3>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color: #3c3454;">Flask API / Subprocess / Matplotlib</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="span_box">
+                                <b data-i18n="web_pro5.title">Logs dashboard</b> 
+                                <ul>
+                                    <li data-i18n="web_pro5.content.0">First Flask project</li>
+                                    <li data-i18n="web_pro5.content.1">Aggregation and JSON formatting of Nginx, SSH and WireGuard connection logs</li>
+                                    <li data-i18n="web_pro5.content.2">Displaying logs within a table</li>
+                                    <li data-i18n="web_pro5.content.3">Graphics generated by Matplotlib</li>
+                                    <li data-i18n="web_pro5.content.4">Possibility to blacklist IP addresses on the web server</li>
+                                    <li data-i18n="web_pro5.content.5">Flask Authentification</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pro_box">
+                             <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/radius.png" alt="website img">
+                                </div>
+                                <div class="cover_text">
+                                    <h3>Radius GUI</h3>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color: #eff0f7; color:black;">Flask / SQLAlchemy</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="span_box">
+                            <b data-i18n="web_pro6.title">RADIUS GUI </b>
+                            <ul>
+                                <li data-i18n="web_pro6.content.0">Graphical interface linked to freeradius' database using Flask</li>
+                                <li data-i18n="web_pro6.content.1">Allow the creation, validity modification and deletion of users</li>
+                                <li data-i18n="web_pro6.content.2">Display last connection's logs</li>
+                            </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <svg id="lwave" viewBox="0 0 200 600" width="200" height="600" preserveAspectRatio="none">
+                    <path  onclick='moveTo("web_projects")' id="lpath"  d="M155 0C165 20 145 40 135 60 C125 80 150 100 175 120 C200 140 180 160 150 180 C120 200 140 220 160 240 C180 260 200 280 180 300 C160 320 140 340 150 360 C160 380 180 400 170 420 C160 440 150 460 155 480 C160 500 170 520 165 540 C160 560 150 580 150 600 L0 600 L0 0 Z" stroke-linecap="round" stroke-linejoin="miter" style="transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+                    </path>
+                </svg>    
+            </div> 
+
+            <!-- Main project-->
+            <div id="projects_main">
+                <div class="main_text">
+                    <h2 data-i18n="nav.projects">Projects</h2>
+                    <p data-i18n="pro_intro">Here are some projects I have worked on in my free time. Feel free to ask for more information</p>
+                </div>
+
+                        
+            
+                <!-- Buttons -->
+                 <div class="project_main_btn">
+                    <div class="btn">
+                        <div id='web' class="project_img_wrapper" onclick='moveTo("web_projects")'>
+                            <img src="./static/images/code.png" alt="Web_development logo">
+                        </div>
+                        <div class="btn_text_wrapper">
+                            <h3 data-i18n="web">Web Development</h3>
+                            <hr>
+                            <p data-i18n="web_intro">
+                               These websites and web applications are locally hosted only 
+                            </p>
+                            <span onclick='moveTo("web_projects")' data-i18n="view_pro">View Projects</span>
+                        </div> 
+                    </div>
+
+                    <div class="btn">
+                        <div id='net' class="project_img_wrapper" onclick='moveTo("net_projects")'>
+                            <img src="./static/images/network.png" alt="System&Networking logo">
+                        </div>
+                           <div class="btn_text_wrapper">
+                            <h3 data-i18n="sys">System & Networking</h3>
+                            <hr>
+                            <p data-i18n="sys_intro">
+                               All of these configurations are running on a Raspberry-Pi
+                            </p>
+                            <span onclick='moveTo("net_projects")' data-i18n="view_pro">View Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  id="net_projects" onclick='if (window.innerWidth > 767){moveTo("net_projects")}'>
+                <svg id="rwave" viewBox="0 0 200 600" width="200" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  preserveAspectRatio="none">
+                    <path id="rpath"  d="M155 0C165 20 145 40 135 60 C125 80 150 100 175 120 C200 140 180 160 150 180 C120 200 140 220 160 240 C180 260 200 280 180 300 C160 320 140 340 150 360 C160 380 180 400 170 420 C160 440 150 460 155 480 C160 500 170 520 165 540 C160 560 150 580 150 600 L0 600 L0 0 Z" stroke-linecap="round" stroke-linejoin="miter" style="transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);"></path>
+                </svg>
+
+                <div class="projects_content">
+                    <h2 data-i18n="sys">System & Networking </h2>
+
+
+                <div class="arrows">
+                    <svg onclick="scroll_left('sysnet_list')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" style="opacity: 1; transform: rotate(0deg);" width="64" height="64" viewBox="5 5 11 14"><path fill="" d="M6.325 12.85q-.225-.15-.337-.375T5.874 12t.113-.475t.337-.375l8.15-5.175q.125-.075.263-.112T15 5.825q.4 0 .7.288t.3.712v10.35q0 .425-.3.713t-.7.287q-.125 0-.262-.038t-.263-.112zM14 15.35v-6.7L8.75 12z"></path></svg>
+                    <svg onclick="scroll_right('sysnet_list')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" style="opacity: 1; transform: rotate(180deg);" width="64" height="64" viewBox="5 5 11 14"><path fill="" d="M6.325 12.85q-.225-.15-.337-.375T5.874 12t.113-.475t.337-.375l8.15-5.175q.125-.075.263-.112T15 5.825q.4 0 .7.288t.3.712v10.35q0 .425-.3.713t-.7.287q-.125 0-.262-.038t-.263-.112zM14 15.35v-6.7L8.75 12z"></path></svg>
+                </div>
+                
+                    <div class="projects_list" id="sysnet_list">
+                        <div class="pro_box">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/nginx.png" alt="nginx">
+                                </div>
+                                <div class="cover_text">
+                                    <h3>Nginx</h3>
+                                    <p data-i18n="sysnet_pro1.cover">Local Hosting</p>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color:#006326">Web Server / DNS / WSGI</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                             <div class="span_box">
+                                <b data-i18n="sysnet_pro1.title"> Nginx, dnsmasq, gunicorn</b> 
+                                <ul>
+                                    <li data-i18n="sysnet_pro1.content.0">Hosting multiple websites with Nginx</li>
+                                    <li data-i18n="sysnet_pro1.content.1" >Securing traffic with OpenSSL</li>
+                                    <li data-i18n="sysnet_pro1.content.2">Local DNS using dnsmasq</li>
+                                    <li data-i18n="sysnet_pro1.content.3">Nginx reverse Proxy and Gunicorn setup for Flask applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pro_box">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/wireguard.png" alt="WireGuard logo">
+                                </div>
+                                <div class="cover_text">
+                                    <h3 >Wireguard</h3>
+                                    <p>VPN</p>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color:#82201e">VPN</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                             <div class="span_box">
+                                <b data-i18n="sysnet_pro2.title">Wireguard VPN</b> 
+                                <ul>
+                                    <li data-i18n="sysnet_pro2.content.0">Installing and setting up a WireGuard server using PiVPN</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="pro_box">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/pxe.png" alt="Netboot.xyz">
+                                </div>
+                                <div class="cover_text">
+                                    <h3>PXE Boot</h3>
+                                    <p data-i18n="sysnet_pro3.cover">Network Booting</p>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color: #2299d6;">PXE/ Netboot</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="span_box">
+                                <b data-i18n="sysnet_pro3.title">PXE Boot </b>
+                                <ul>
+                                    <li data-i18n="sysnet_pro3.content.0">Netboot.xyz running in Docker</li>
+                                    <li data-i18n="sysnet_pro3.content.1">Introduction to Docker</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pro_box">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/freeradius.png" alt="FreeRADIUS">
+                                </div>
+                                <div class="cover_text">
+                                    <h3 data-i18n="sysnet_pro4.title">Wi-Fi Access Point</h3>
+                                    <p>---</p>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color: #00a1db;">Hostapd / freeradius</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="span_box">
+                                <b data-i18n="sysnet_pro4.title">Wi-Fi Access Point</b>
+                                <ul>
+                                    <li data-i18n="sysnet_pro4.content.0">Configuration of Hostapd in WPA2-EAP mode</li>
+                                    <li data-i18n="sysnet_pro4.content.1">FreeRADIUS authentication server (see Radius GUI)</li>
+                                </ul> 
+                            </div>
+                        </div>
+                        <div class="pro_box">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="./static/images/scapy.png" alt="Scapy">
+                                </div>
+                                <div class="cover_text">
+                                    <h3 >MITM Proxy</h3>
+                                    <p>---</p>
+                                    <div class="vignettes">
+                                        <span class="vignette" style="background-color: #459142;">Scapy (python)</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="span_box">
+                                <b>MITM Proxy </b>
+                                <ul>
+                                    <li data-i18n="sysnet_pro5.content.0">Development of 3 Scapy scripts to learn packet interception and manipulation</li>
+                                    <li data-i18n="sysnet_pro5.content.1">Spoofing a MAC address between a target and a router</li>
+                                    <li data-i18n="sysnet_pro5.content.2">Intercepting, rewriting and forwarding requests</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+                    
+            </div>
+        </div>
+
+
+         <!-- Separator -->
+         <hr class="hr2">
+
+        <!-- Skills-->
+        <div id="skills" class="page">
+            <div class="upper_zone">
+                <h2 data-i18n="nav.skills">Skills</h2>
+                <p data-i18n="skills_intro">Technologies and tools I am familiar with</p>
+            </div>
+            <div class="skills_content">
+                <div class="domain_block">
+                    <div class="subleft">
+                        <img src="./static/images/code.png">
+                    </div>
+                    <div class="subright">
+                        <h3 data-i18n="development">Development</h3>
+                        <div class="vignettes_box">
+                            <span class="vignette">HTML</span>
+                            <span class="vignette">CSS</span>
+                            <span class="vignette">JavaScript</span>
+                            <span class="vignette">SQL</span>
+                            <span class="vignette">PHP</span>
+                            <span class="vignette">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="domain_block">
+                    <div class="subleft">
+                        <img src="./static/images/network.png">
+                    </div>
+                    <div class="subright">
+                        <h3 data-i18n="networks">Networks</h3>
+                        <div class="vignettes_box">
+                            <span class="vignette">OSI</span>
+                            <span class="vignette">TCP/IP</span>
+                            <span class="vignette">WPA2-PSK/EAP</span>
+                            <span class="vignette">VPN</span>
+                            <span class="vignette">Cisco Packet Tracer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="domain_block">
+                    <div class="subleft">
+                        <img src="./static/images/swords.png">
+                    </div>
+                    <div class="subright">
+                        <h3 data-i18n="offensive">Offensive Security</h3>
+                        <div class="vignettes_box">
+                            <span class="vignette" data-i18n="cryptography">Cryptography</span>
+                            <span class="vignette">Nmap</span>
+                            <span class="vignette">BurpSuite</span>
+                            <span class="vignette">Metasploit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="domain_block">
+                    <div class="subleft">
+                        <img src="./static/images/shield.png">
+                    </div>
+                    <div class="subright">
+                        <h3 data-i18n="monitoring">SIEM & Monitoring</h3>
+                        <div class="vignettes_box">
+                            <span class="vignette">Wireshark</span>
+                            <span class="vignette" data-i18n="splunk">Splunk - basics</span>
+                            <span class="vignette" data-i18n="elastic">Elastic - basics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="domain_block full">
+                    <div class="subleft">
+                        <img src="./static/images/system.png">
+                    </div>
+                    <div class="subright">
+                        <h3 data-i18n="systems">Systems</h3>
+                        <div class="vignettes_box">
+                            <span class="vignette">Linux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="domain_block full">
+                    <div class="subleft">
+                        <img src="./static/images/certif.png">
+                    </div>
+                    <div class="subright">
+                        <h3 data-i18n="certif">Certifications</h3>
+                        <div class="vignettes_box">
+                            <span class="vignette">Cambridge C1</span>
+                            <span class="vignette">JLPT N1</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        
+
+            <div id="box-right">
+                <div class="row">
+                    <div class="star" style="position:absolute;right:0;animation-delay:2s"></div>
+                </div>
+                <div class="row">
+                    <div class="star" style="animation-delay: 3s;"></div>
+                </div>
+                <div class="row">
+                    <div class="star" style="animation-delay: 2s;"></div>
+                    <div class="star" style="animation-delay: 4s;"></div>
+                </div>
+                <div class="row">
+                    <div class="star" style="animation-delay: 2s;"></div>
+                </div>
+                <div class="row">
+                    <div class="star" style="animation-delay: 4s;"></div>
+                    <div class="star" style="animation-delay: 2s;"></div>
+                    <div class="star" style="animation-delay: 2s;"></div>
+                    <div class="star" style="animation-delay: 4s;"></div>
+                    <div class="star" style="margin-top:3rem"></div>
+                    <div class="star" style="margin-bottom:3rem"></div>
+
+                </div>
+               
+           
+            </div>
+
+            <div id="polygon-sep"></div>
+
+                                
+
+        </div>
+
+        <div id="bonus_zone">
+            <div id="ctf_box" class="hide">
+                <a class="ctf_wrapper hide" href="https://www.root-me.org/Trunks-1085847" target="_blank">
+                    <img src="./static/images/rootme.png">
+                </a>
+                <a class="ctf_wrapper hide" href="https://tryhackme.com/p/trunks88100" target="_blank">
+                    <img src="./static/images/tryhackme.png">
+                </a>
+            </div>
+            <div id="shell_box" class="hide">
+                <div class="output_wrapper">
+
+                </div>
+                <div class="input_wrapper">
+                    <span>$</span>
+                    <input type="text" id="shell_input">
+                </div>
+            </div>
+                <img src="./static/images/bat.png" alt="a bat" id="bat">
+
+        </div>
+
+        <!-- Contact -->
+         <div id="contact" class="page">
+            <div class="img_box">
+            </div>
+            <div class="box">
+                <span><img src="./static/images/mail.png">alix.dropbox169@passinbox.com<a href="./static/pubkey.asc" download>PGP</a></span>
+                <div class="medias">
+                    <a href="mailto:alix.dropbox169@passinbox.com"><img src="./static/images/mail.png" alt="email"></a>
+                    <a href="https://www.linkedin.com/in/alix-r-815218433/" target="_blank"><img src="./static/images/linkedin.png" alt="linkedin"></a>
+                    <a href="https://github.com/Alix-Rqs" target="_blank"><img src="./static/images/github.png" alt="github"></a>
+                </div>
+            </div>
+
+         </div>
+
+
+    </div>
+
+</body>
+
+
+</html>

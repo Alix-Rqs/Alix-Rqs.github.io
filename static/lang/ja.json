@@ -1,0 +1,50 @@
+{
+    "nav":{"home":"ホーム",
+    "about":"自己紹介",
+    "projects":"プロジェクト",
+    "skills":"スキル",
+    "contact":"連絡先"},
+
+    "welcome":"私のポートフォリオへようこそ!",
+    "home-btn1":"プロジェクトを見る",
+    "home-btn2":"お問い合わせ",
+
+    "ab1":{"title":"一般バカロレア", "loc":"Pasteur高等学校, Hénin-Beaumont","more":"数学・生物の専門科目"},
+    "ab2":{"title":"日本語・日本文化学科", "loc":"リール大学",  "more":"日本語能力試験１級"},
+    "ab3":{"title":"一年留学(日本)", "loc":"名古屋外国語大学"},
+    "ab4":{"title":"大学技術学士（BUT）ネットワーク・通信専攻", "loc":"ベテューヌ IUT (大学技術短期大学部)"},
+
+    "pro_intro":"以下は、時間のある時に取り組んだプロジェクト。詳細について知りたい方はどうぞお気軽にご連絡ください。",
+    "web":"Web開発",
+    "web_intro":"これらのWebサイト・Webアプリは、すべてローカル環境でホスティングされている",
+    "sys":"システム・ネットワーク",
+    "sys_intro":"すべてのプログラムはRaspberry Piに構築され、実行されている",
+    "view_pro":"プロジェクトを見る",
+    
+    "web_pro1":{"title":"UPH", "content":["『サイバーパンク2077』の世界を舞台とした架空の政党の静的Webサイト","phpMyAdminを使用したMySQLとの初めての経験"]},
+    "web_pro2":{"title":"SNS","content":["PHPのみのバックエンド","ユーザー、権限、メッセージの管理機能"
+    ,"プロフィール編集、投稿、コメント、いいねも可能"]},
+    "web_pro3":{"title":"Spotify API","content":["Spotify APIを利用してアーティスト情報を取得","アーティストを検索し、取得した情報を表示する機能"]},
+    "web_pro4":{"title":"RPG向けツール", "content":["セッションデータを保持するためにLocalStorageを使用","JSONファイルによるデータの保存・読み込み"]},
+    "web_pro5":{"title":"Logs Dashboard","content":["Flaskを使用した初めてのプロジェクト","Nginx､　SSH､　WireGuardのログファイルを解析し、JSON形式に変換","ログの読み込み・表示機能","Matplotlibでのグラフ","WebサーバーからIPアドレスを直接ブロックする機能","Flaskによる認証機能"]},
+    "web_pro6":{"title":"RADIUS GUI","content":["FreeRADIUSデータベースと連携するFlaskアプリ","ユーザーの追加、有効期限の変更、削除が可能","最終接続日時の表示"]},
+
+    "sysnet_pro1":{"title":"Nginx､ Dnsmask､ Gunicorn","content":["Nginxを使用した複数のWebサイトのホスティング","OpenSSLによる通信の暗号化","DnsmasqによるローカルDNSサーバーの構築","NginxリバースプロキシとGunicornの設定(Flask)"], "cover":"ローカルホスティング"},
+    "sysnet_pro2":{"title":"VPN WireGuard","content":["PiVPNによるWireguardサーバーの構築"]},
+    "sysnet_pro3":{"title":"PXE Boot","content":["Netboot.xyz（Docker）","Dockerの基礎"], "cover":"ネットワークブート"},
+    "sysnet_pro4":{"title":"Wi-Fiアクセスポイント","content":["HostapdをWPA2-EAPモードで構築","FreeRADIUSによる認証サーバーの構築"]},
+    "sysnet_pro5":{"title":"MITMプロキシ","content":["Scapyを使用した3つのプログラムの開発","パケットの受信、書き換え、転送機能"]},
+
+
+    "skills_intro":"馴染みのある技術・ツール",
+    "development":"開発",
+    "networks":"ネットワーク",
+    "cryptography":"暗号技術",
+    "splunk":"Splunk - 基礎",
+    "elastic":"Elastic - 基礎",
+    "offensive":"オフェンシブ・セキュリティ",
+    "monitoring":"SIEM・監視",
+    "systems":"システム",
+    "certif":"資格"
+    
+}
