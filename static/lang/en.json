@@ -32,17 +32,17 @@
     "sysnet_pro2":{"title":"WireGuard VPN","content":["Installing and setting up a WireGuard server using PiVPN"]},
     "sysnet_pro3":{"title":"PXE Boot","content":["Netboot.xyz running in Docker","Introduction to Docker"], "cover":"Network Booting"},
     "sysnet_pro4":{"title":"Wi-Fi Access Point","content":["Configuration of Hostapd in WPA2-EAP mode","FreeRADIUS authentication server (see Radius GUI)"]},
-    "sysnet_pro5":{"title":"MITM Proxy","content":["Development of 3 Scapy scripts to learn packet interception and manipulation","Spoofing a MAC address between a target and a router","Intercepting, rewriting and forwarding requests"]},
+    "sysnet_pro5":{"title":"MITM Proxy","content":["Development of 3 Scapy scripts to learn packet interception and manipulation","ARP poisoning between a target and a router","Intercepting, rewriting and forwarding requests"]},
+    "sysnet_pro6":{"title":"Mini SOC Lab","content":["Kibana and Elasticsearch deployed on a Debian VM, remotely accessed through a WireGuard VPN","Elastic Agent installed on a Raspberry Pi, collecting and sending Suricata and system logs","Suricata is running on the Raspberry Pi and monitoring the interface used by hostapd in AP mode"]},
 
 
-    "skills_intro":"Technologies and tools I am familiar with",
+    "skills_intro":"Technologies and tools I am familiar with :",
     "development":"Development",
     "networks":"Networks",
     "cryptography":"Cryptography",
     "offensive":"Offensive Security",
     "monitoring":"SIEM & Monitoring",
     "splunk":"Splunk - basics",
-    "elastic":"Elastic - basics",
     "systems":"Systems",
     "certif":"Certifications"
     

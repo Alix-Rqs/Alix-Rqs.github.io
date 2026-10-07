@@ -32,17 +32,17 @@
     "sysnet_pro2":{"title":"VPN WireGuard","content":["Mise en place d'un serveur VPN WireGuard sur Raspberry Pi avec PiVPN"]},
     "sysnet_pro3":{"title":"PXE Boot","content":["Déploiement de Netbootxyz avec docker","Première utilisation de docker"], "cover":"Boot à partir du réseau"},
     "sysnet_pro4":{"title":"Point d'accès Wi-fi","content":["Configuration d'un point d'accès Wi-fi avec Hostapd en WPA2-EAP","Mise en place d'un serveur d'authentification Freeradius"]},
-    "sysnet_pro5":{"title":"MITM Proxy","content":["Développement de trois scripts Python avec Scapy pour apprendre à intercepter et manipuler les paquets circulants sur le réseau","Usurpation d'addresse MAC entre une cible et un routeur","Interception, modifications et relais des requêtes réseau."]},
+    "sysnet_pro5":{"title":"MITM Proxy","content":["Développement de trois scripts Python avec Scapy pour apprendre à intercepter et manipuler les paquets circulants sur le réseau","ARP poisoning entre une cible et un routeur","Interception, modifications et relais des requêtes réseau."]},
+    "sysnet_pro6":{"title":"Mini SOC Lab","content":["Kibana et Elasticsearch déployés sur une VM Debian, remotely, accédée à distance via un VPN WireGuard","Elastic Agent installé sur un Raspberry Pi, collectant et envoyant les logs système et ceux de Suricata","Suricata tourne sur le Raspberry Pi et surveille l'interface utilisée par hostapd en mode AP"]},
 
 
-    "skills_intro":"Technologies et outils avec lesquels je suis familier",
+    "skills_intro":"Technologies et outils avec lesquels je suis familier :",
     "development":"Développement",
     "networks":"Réseaux",
     "cryptography":"Cryptographie",
     "offensive":"Sécurité Offensive",
     "monitoring":"SIEM & Monitoring",
     "splunk":"Splunk - notions",
-    "elastic":"Elastic - notions",
     "systems":"Systèmes",
     "certif":"Certifications"
     

@@ -34,14 +34,14 @@
     "sysnet_pro3":{"title":"PXE Boot","content":["Netboot.xyz（Docker）","Dockerの基礎"], "cover":"ネットワークブート"},
     "sysnet_pro4":{"title":"Wi-Fiアクセスポイント","content":["HostapdをWPA2-EAPモードで構築","FreeRADIUSによる認証サーバーの構築"]},
     "sysnet_pro5":{"title":"MITMプロキシ","content":["Scapyを使用した3つのプログラムの開発","パケットの受信、書き換え、転送機能"]},
+    "sysnet_pro6":{"title":"Mini SOC Lab","content":["KibanaとElasticsearchをDebianのVM上に構築し、WireGuard VPN経由でアクセス","Raspberry PiにElastic Agentを導入し、 Suricataとシステムのログを収集してElasticsearchに送信","Raspberry Pi上でSuricataを稼働させ、hostapdがAPモードで使うインターフェイスを監視"]},
 
 
-    "skills_intro":"馴染みのある技術・ツール",
+    "skills_intro":"馴染みのある技術・ツール :",
     "development":"開発",
     "networks":"ネットワーク",
     "cryptography":"暗号技術",
     "splunk":"Splunk - 基礎",
-    "elastic":"Elastic - 基礎",
     "offensive":"オフェンシブ・セキュリティ",
     "monitoring":"SIEM・監視",
     "systems":"システム",
