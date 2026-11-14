@@ -1,5 +1,39 @@
 
-// history.scrollRestoration = "manual";
+const overlay = document.getElementById("overlay")
+overlay.addEventListener('click',(e)=>{
+    if (e.target === overlay){
+        overlay.style.display="none"
+    }
+})
+
+
+
+/* Image observer (dots) */
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.75,
+};
+
+const img_selection_zone = document.querySelector('.img_selection')
+let dots = img_selection_zone.querySelectorAll("span")
+let images = [...document.querySelector(".img_wrapper").children]
+dots.forEach((dot, index)=>{
+    dot.addEventListener('click',()=>{
+        images[index].scrollIntoView({behavior:'smooth'})
+    })
+})
+
+const img_observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting){
+            dots.forEach((dot)=>{dot.classList.remove("checked")})
+            num = images.indexOf(entry.target)
+            dots[num].classList.add("checked")
+
+        }
+    })
+}, observerOptions)
 
 
 
@@ -118,11 +152,7 @@ buttons.forEach((btn) =>{
     })
 })
 
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.75,
-};
+
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -191,7 +221,7 @@ function set_default_lang(){
 
 set_default_lang()
 
-//Fix Safari touch bug
+//SAFARI TOUCH BUG
 const pro_boxes = document.querySelectorAll('.pro_box')
 pro_boxes.forEach((box) => {
     box.addEventListener('touchstart', () => {
@@ -205,4 +235,63 @@ pro_boxes.forEach((box) => {
     box.addEventListener('touchcancel', () => {
         box.classList.remove('touched');
     });
+
+    box.addEventListener('click',()=>{
+        overlay.style.display="block"
+        const s_title = box.querySelector("h3")
+        const s_text = box.querySelectorAll("li")
+        const cover_img = box.querySelector("img")
+
+        const b_title = overlay.querySelector('h3')
+        const b_text_box = overlay.querySelector(".explanation_section")
+
+        b_text_box.textContent = ""
+        s_text.forEach((el)=>{
+            const new_el = document.createElement("p")
+            new_el.textContent = el.textContent
+            b_text_box.appendChild(new_el)
+        })
+
+        b_title.textContent = s_title.textContent
+
+        /* Assets */
+
+        const tot_vid = s_title.getAttribute("data-vid")
+        const tot_img = s_title.getAttribute("data-img")
+        const pro_name = s_title.getAttribute('data-name')
+        const img_wrapper = document.querySelector(".img_wrapper")
+
+        img_wrapper.textContent= "";
+        img_selection_zone.textContent = ""
+
+        /* Add videos*/
+        if (tot_vid){
+            console.log(pro_name)
+            for (let i = 0; i < tot_vid; i++) {
+            const new_video = `<video width="400" controls><source src="./static/videos/${pro_name}${i}.mp4" type="video/mp4"></video>`
+            img_wrapper.insertAdjacentHTML("beforeend",new_video)
+
+            img_selection_zone.appendChild(document.createElement("span"))
+        }}
+
+        /* Add images */
+        if (tot_img){
+            for (let i = 0; i < tot_img; i++) {
+                const new_img = `<img src='./static/images/projects/${pro_name}${i}.png'>`
+                img_wrapper.insertAdjacentHTML("beforeend", new_img)
+                img_selection_zone.appendChild(document.createElement("span"))
+        }
+
+       images = [...document.querySelector(".img_wrapper").children]
+       dots = img_selection_zone.querySelectorAll("span")
+
+        images.forEach((img)=>{
+            img_observer.observe(img)
+        })
+        
+    }})
 });
+
+
+
+

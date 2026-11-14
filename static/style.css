@@ -13,10 +13,7 @@ html {
     --main-bg: #000a25;
     --main-bg2: #603772;
     --main-bg3:#2B5DB3;
-    --main-bg4:#020529;
-    --color1: #ffb205;
     --dark: #110037;
-    --main-bg-tr: #ffeabf90;
     --fat-border: 10px solid black;
     --font-color: white;
     --light: #400e89;
@@ -30,6 +27,9 @@ html {
     --purple: #6d2ccd;
     --purple-transparent:#6d2ccd12;
 }
+
+
+
 body{
     background:var(--main-bg);
     font-family:'Poppins', sans-serif;;
@@ -48,8 +48,13 @@ body{
 }
 
 h2{
-    font-size:max(30px,4vw);
+    font-size:max(30px,3.5vw);
     padding-bottom:5px;
+}
+
+#overlay h3{
+    font-size:max(25px,3vw);
+    padding: 1rem 2rem
 }
 
 
@@ -79,6 +84,10 @@ h2{
     gap:1.5rem;
     transition: 0.5s;
     align-items: center;
+    background-color: var(--dark);
+    border:1px solid var(--light);
+    border-radius:20px;
+    padding:5px;
 }
 
 .nav_opened{
@@ -134,19 +143,24 @@ a:hover, a:active{
 
 
 .nav a:hover, .nav a:active{
-    background: var(--nav-btn) !important;
+    background: var(--light) !important;
     position:relative;
     z-index:0;
     border-radius: 20px;
-    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.4);
     transition: 0.1s;
 }
 .selected {
-    background: var(--nav-btn) !important;
+    /* background: var(--nav-btn) !important; */
     position:relative;
     z-index:0;
     border-radius: 20px;
-    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.4); */
+    transition: 0.1s;
+}
+.selected {
+    background: var(--light);
+    position:relative;
+    z-index:0;
     transition: 0.1s;
 }
 
@@ -157,7 +171,7 @@ a:hover, a:active{
 
 #home {
     background: var(--main-bg);
-    background: radial-gradient(var(--main-bg2),var(--light),#000a25 60%);
+    background: radial-gradient(var(--main-bg2),var(--light),var(--main-bg) 60%);
     height:90svh;
     position: relative;
     display:flex;
@@ -190,8 +204,8 @@ a:hover, a:active{
   width: 10%;
   top: 0;
   right: 0;
-  border-top: 3px solid var(--main-bg2);
-  border-right: 3px solid var(--main-bg2);
+  border-top: 3px solid var(--light);
+  border-right: 3px solid var(--light);
 }
 
 .flex-box::after {
@@ -201,8 +215,8 @@ a:hover, a:active{
   width: 10%;
   bottom: 0;
   left: 0;
-  border-bottom: 3px solid var(--main-bg2);
-  border-left: 3px solid var(--main-bg2);
+  border-bottom: 3px solid var(--light);
+  border-left: 3px solid var(--light);
 }
 
 .flex-box h1{
@@ -380,7 +394,7 @@ hr {
 /*** About ***/
 
 #about {
-    background:linear-gradient( var(--main-bg) 10% 90%, var(--main-bg2));
+    background:linear-gradient( var(--main-bg) 95%, var(--main-bg2));
     padding:8svh 2rem;
     position:relative;
     height:100svh;
@@ -412,7 +426,7 @@ hr {
     position: absolute;
     bottom:0;
     left:0;
-    background: var(--strings-color);
+    background: linear-gradient(90deg, var(--purple), transparent);
     filter:blur(1px);
     transition: 0.3s;
 }
@@ -629,7 +643,6 @@ hr {
 #projects h2{
     z-index:5;
     position:relative;
-    font-size: max(30px,4vw);
     text-shadow:0px 0px 10px black
 }
 
@@ -653,7 +666,7 @@ hr {
     scroll-behavior: smooth;
 
     background: linear-gradient(90deg, #2a0480,var(--light));
-    background: var(--main-bg4);
+    background: var(--main-bg);
 }
 
 #projects_main h2::after{
@@ -682,26 +695,16 @@ hr {
     min-height:50svh;
 }
 
-.btn:last-child img{ /* Right-btn*/
-    background:linear-gradient(45deg, var(--purple),var(--main-bg4));
-    border:1px solid var(--purple)
-
-}
 
 .btn:last-child span{ /* Right-btn*/
-    background: linear-gradient(45deg, var(--purple),var(--main-bg4));
-    border:1px solid var(--purple)
+    background: linear-gradient(90deg, var(--purple), var(--light));
 
 }
 
 .btn:last-child hr{ /* Right-btn*/
-     background: radial-gradient(var(--purple) 20%,transparent);
+     background: var(--purple);
 }
 
-.btn:last-child { /* Right-btn*/
-    border:1px solid var(--purple);
-    box-shadow: 0 0 5px var(--purple);
-}
 
 .btn:last-child::after{  /* Right-btn*/
     box-shadow: inset 0 0 5px var(--purple);
@@ -712,10 +715,7 @@ hr {
 .btn{
     display:flex;
     align-items: center;
-    flex-direction: column;
-    border:1px solid var(--main-bg3);
-    box-shadow: 0 0 3px var(--main-bg3);
-    min-height:80%;
+    flex-direction: column;    min-height:80%;
     width:40%;
     padding:1rem;
     border-radius: 15px;
@@ -747,10 +747,10 @@ hr {
 }
 
 .btn hr{
-    height:3px;
+    height:1px;
     width:30%;
     border:none;
-    background: radial-gradient(var(--main-bg3) 20%,transparent);
+    background: var(--main-bg3);
 }
 
 .project_img_wrapper {
@@ -762,16 +762,13 @@ hr {
     box-sizing: border-box;
     border-radius: 50px;
     padding:10px;
-    background:linear-gradient(45deg, var(--main-bg3),var(--main-bg4));
-    border:1px solid var(--main-bg3)
 }
 
 
 .btn_text_wrapper span{
-    border-radius: 50px;
+    border-radius: 10px;
     padding:5px 1rem;
-    background: linear-gradient(45deg, var(--main-bg3),var(--main-bg4));
-    border:1px solid var(--main-bg3);
+    background:var(--main-bg3);
     cursor:pointer;
 }
 
@@ -937,7 +934,6 @@ hr {
     border-radius: 10px;
     box-sizing: border-box;
     border:2px solid var(--main-bg3);
-    box-shadow: 0 0 10px var(--main-bg3);
     background-color: #0003;
     padding:1rem;
     transition: 0.3s;
@@ -946,6 +942,10 @@ hr {
 
 
     line-height: 1.5rem;
+}
+
+#net_projects .pro_box{
+    border:2px solid var(--purple)
 }
 
 
@@ -1054,7 +1054,7 @@ hr {
 /*** Skills ***/
 #skills {
     display:flex;
-    background:linear-gradient(#000b29,black);
+    background:linear-gradient(var(--main-bg),black);
     position:relative;
     overflow: hidden;
     min-height:100svh;
@@ -1081,8 +1081,8 @@ hr {
 
 .domain_block{
     border: 1px solid #363359;
-    background-color: #00000010;
-    backdrop-filter: blur(5px);
+    background-color: #ffffff0a;
+    backdrop-filter: blur(10px);
     flex:49%;
     display: flex;
     gap:0.5rem;
@@ -1114,8 +1114,8 @@ hr {
 .subleft img{
     height:75px;
     width:75px;
-    background: linear-gradient(45deg,var(--main-bg3),var(--dark));
-    border-radius: 50px;
+    background: var(--light);
+    border-radius: 20px;
     padding:1rem;
     box-sizing: border-box;
 }
@@ -1660,3 +1660,94 @@ hr {
     }
 }
 
+
+.details_box {
+    width: min(95vw, 900px);
+    height:80vh;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--light);    z-index:99999;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.closing_section{
+    background-color: var(--light);
+    height:25px;
+    width:100%;
+}
+
+.assets_section{
+    flex:7;
+    width:70%;
+
+}
+
+.explanation_section{
+    flex:3;
+    padding:0 1rem;
+}
+
+.img_wrapper{
+    height:75%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow:auto;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+    padding:0 1rem;
+    box-sizing: border-box;
+    border: 1px solid var(--light);
+    border-radius: 10px;
+}
+
+.img_wrapper img, video{
+    height: 100%;
+    min-width:100%;
+    object-fit: contain;
+    scroll-snap-align: start;
+
+}
+
+.center{
+    display: flex;
+    height:calc(100% - 5rem); /* -15px ?*/
+
+    padding: 1rem 2rem;
+    padding-top:0;
+    box-sizing: border-box;
+}
+
+.img_selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    height:25%
+}
+.img_selection span{
+    width:20px;
+    height:20px;
+    border: 1px solid var(--purple);
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition:0.2s;
+}
+
+.checked {
+    background-color: var(--purple);
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position:fixed;
+    height:100%;
+    width:100%;
+    inset:0;
+    z-index:999;
+    display: none;
+}
