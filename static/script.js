@@ -6,6 +6,10 @@ overlay.addEventListener('click',(e)=>{
     }
 })
 
+close_btn = document.getElementById("close_box")
+close_btn.addEventListener("click",()=>{
+    overlay.style.display="none"
+})
 
 
 /* Image observer (dots) */
@@ -104,6 +108,14 @@ if (vw > 767){
             mouse.preventDefault()
             el.scrollLeft+= mouse.deltaY*3
         })
+    })
+
+    let img_wrapper = document.querySelector(".img_wrapper")
+    const assets_section = document.querySelector(".assets_section")
+    assets_section.addEventListener("wheel",(mouse)=>{
+        mouse.preventDefault()
+        img_wrapper.scrollLeft += mouse.deltaY*4
+
     })
 
     project_page.addEventListener('mousemove',(mouse)=>{
@@ -259,7 +271,7 @@ pro_boxes.forEach((box) => {
         const tot_vid = s_title.getAttribute("data-vid")
         const tot_img = s_title.getAttribute("data-img")
         const pro_name = s_title.getAttribute('data-name')
-        const img_wrapper = document.querySelector(".img_wrapper")
+        let img_wrapper = document.querySelector(".img_wrapper")
 
         img_wrapper.textContent= "";
         img_selection_zone.textContent = ""
@@ -268,7 +280,7 @@ pro_boxes.forEach((box) => {
         if (tot_vid){
             console.log(pro_name)
             for (let i = 0; i < tot_vid; i++) {
-            const new_video = `<video width="400" controls><source src="./static/videos/${pro_name}${i}.mp4" type="video/mp4"></video>`
+            const new_video = `<video width="400" controls autoplay><source src="./static/videos/${pro_name}${i}.mp4" type="video/mp4"></video>`
             img_wrapper.insertAdjacentHTML("beforeend",new_video)
 
             img_selection_zone.appendChild(document.createElement("span"))
@@ -284,7 +296,9 @@ pro_boxes.forEach((box) => {
 
        images = [...document.querySelector(".img_wrapper").children]
        dots = img_selection_zone.querySelectorAll("span")
-
+       dots.forEach((dot, index)=>{dot.addEventListener('click',()=>{
+        images[index].scrollIntoView({behavior:'smooth'})})
+    })
         images.forEach((img)=>{
             img_observer.observe(img)
         })
