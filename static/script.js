@@ -280,7 +280,7 @@ pro_boxes.forEach((box) => {
         if (tot_vid){
             console.log(pro_name)
             for (let i = 0; i < tot_vid; i++) {
-            const new_video = `<video width="400" controls autoplay><source src="./static/videos/${pro_name}${i}.mp4" type="video/mp4"></video>`
+            const new_video = `<video width="400" controls><source src="./static/videos/${pro_name}${i}.mp4" type="video/mp4"></video>`
             img_wrapper.insertAdjacentHTML("beforeend",new_video)
 
             img_selection_zone.appendChild(document.createElement("span"))
