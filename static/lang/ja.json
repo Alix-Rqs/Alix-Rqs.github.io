@@ -28,6 +28,8 @@
     "web_pro4":{"title":"RPG向けツール", "content":["セッションデータを保持するためにLocalStorageを使用","JSONファイルによるデータの保存・読み込み"]},
     "web_pro5":{"title":"Logs Dashboard","content":["Flaskを使用した初めてのプロジェクト","Nginx､　SSH､　WireGuardのログファイルを解析し、JSON形式に変換","ログの読み込み・表示機能","Matplotlibでのグラフ","WebサーバーからIPアドレスを直接ブロックする機能","Flaskによる認証機能"]},
     "web_pro6":{"title":"RADIUS GUI","content":["FreeRADIUSデータベースと連携するFlaskアプリ","ユーザーの追加、有効期限の変更、削除が可能","最終接続日時の表示"]},
+    "web_pro7":{"title":"WebAuthn Demo","content":["WebAuthnを使用したアカウントの作成と認証","パスキー（物理キーまたはソフトウェアキー）でアカウントを作成・認証できる","WebAuthnによるアカウント作成と認証の流れをステップに分けて解説する"]},
+
 
     "sysnet_pro1":{"title":"Nginx､ Dnsmask､ Gunicorn","content":["Nginxを使用した複数のWebサイトのホスティング","OpenSSLによる通信の暗号化","DnsmasqによるローカルDNSサーバーの構築","NginxリバースプロキシとGunicornの設定(Flask)"], "cover":"ローカルホスティング"},
     "sysnet_pro2":{"title":"VPN WireGuard","content":["PiVPNによるWireguardサーバーの構築"]},
